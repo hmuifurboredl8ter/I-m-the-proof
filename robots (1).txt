@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hmuifurboredl8ter.github.io/I-m-the-proof/sitemap.xml
