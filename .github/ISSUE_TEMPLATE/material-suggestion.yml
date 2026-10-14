@@ -1,0 +1,50 @@
+name: Material suggestion
+description: Suggest a new track, hook angle, beat idea, or visual for the I'm the Proof trilogy.
+title: "Material: "
+labels: ["material-suggestion"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of material is it?
+      options:
+        - New track idea
+        - Hook or line angle
+        - Beat or production idea
+        - Visual for a lyric display
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: track
+    attributes:
+      label: Which track does it connect to?
+      options:
+        - You the Promise
+        - You the Talk
+        - You the Fan
+        - A new track
+        - The whole trilogy
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion
+      description: Describe the idea as concretely as you can.
+    validations:
+      required: true
+  - type: textarea
+    id: fit
+    attributes:
+      label: How does it fit the standard?
+      description: The trilogy runs on evidence, not promises. Say how your idea shows instead of tells.
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Sharing
+      options:
+        - label: This idea is my own, and I'm happy for it to be considered for the trilogy.
+          required: true
