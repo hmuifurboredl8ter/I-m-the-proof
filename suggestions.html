@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suggest material for the I'm the Proof trilogy</title>
+<meta name="description" content="Send a suggestion for the I'm the Proof trilogy: a new track idea, a hook angle, a beat, or a visual for the lyric displays.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Main">
+    <a class="mark" href="index.html">I'm the Proof</a>
+    <a href="index.html">The trilogy</a>
+    <a href="suggestions.html" aria-current="page">Suggest material</a>
+  </nav>
+
+  <main>
+    <header class="hero" style="padding-bottom:2.5rem">
+      <h1>
+        <span class="evidence" style="font-size:clamp(3rem,1rem + 9vw,7.5rem)">Suggest material</span>
+      </h1>
+      <p class="sub">Every suggestion is a GitHub issue. Fill in a short form, and it lands in the list below once it's reviewed.</p>
+    </header>
+
+    <section class="section" aria-labelledby="kinds-h">
+      <h2 id="kinds-h">What to send</h2>
+      <p class="lede">The trilogy runs on evidence, not promises, so the best suggestions show how they fit that standard.</p>
+      <ul class="kinds">
+        <li><strong>A new track.</strong> A fourth opponent or a different failure of language, with the verdict it would end on.</li>
+        <li><strong>A hook or line angle.</strong> A way to sharpen an accusation, a verdict, or the moment the beat drops out.</li>
+        <li><strong>Beat or production.</strong> A tempo, texture, or arrangement idea, such as where silence should do the work.</li>
+        <li><strong>A visual for the lyric displays.</strong> A color, motion, or scene idea for any of the three tracks.</li>
+      </ul>
+      <a class="button solid" href="https://github.com/hmuifurboredl8ter/I-M-THE-PROOF/issues/new?template=material-suggestion.yml">Open the suggestion form</a>
+      <p class="status-note" style="margin-top:1rem">You need a free GitHub account to submit.</p>
+    </section>
+
+    <section class="section" aria-labelledby="list-h">
+      <h2 id="list-h">Suggestions so far</h2>
+      <p id="list-status" class="status-note" role="status">Loading suggestions.</p>
+      <ul id="suggestion-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Back to <a href="index.html">the trilogy</a>, or read all suggestions on <a href="https://github.com/hmuifurboredl8ter/I-M-THE-PROOF/issues?q=label%3Amaterial-suggestion">GitHub</a>.</p>
+  </footer>
+</div>
+<script src="assets/suggestions.js"></script>
+</body>
+</html>
